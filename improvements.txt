@@ -1,0 +1,21 @@
+
+- Removed title, and filter buttons and added navbar with the title on the left 
+  and the filter buttons on the right
+
+- Fixed the map so user doesn't have the hit the CTRL key before they can zoom in on map
+
+- Fixed how the map would resize with bootstrap
+
+- Edited the info windows with description titles beside the information so the user knows
+  what they are reading
+
+- Change size of buttons below the map
+
+- Change how the mobile view looks for the application because of the nav bar has filter
+  buttons on it
+
+- Removed old footer and added a sticky footer with a navbar
+
+- Added social media button for twitter
+
+- Changed names for the links in the info window so the user doesn't get confused by names

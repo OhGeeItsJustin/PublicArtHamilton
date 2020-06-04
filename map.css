@@ -1,0 +1,96 @@
+/**
+*	I justin fallis, 000398973 certify that this material is my original work. 
+*       No other person's work has been used without due acknowledgement. 
+*       I have not made my work available to anyone else.
+*	
+*	Css page for beta project.
+*/
+body {
+   min-height: 400px;
+   margin-bottom: 100px;
+   clear: both;
+}
+#changeColour{
+	color:white;
+}
+.fa {
+  padding: 15px;
+  font-size: 25px !important;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 0px;
+  border-radius: 50%; 
+	float:right;
+margin-top: -57px 
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.btn-floating btn-lg btn-tw {
+position: fixed;
+	bottom: 20px;
+  	right: 200px;
+}
+
+#map {
+                background-color:lightblue;
+	    }
+	    #location {
+		height: 60px;
+		width: 1000px;
+		color: black;
+	    }
+	    .info {
+		border-style: solid;
+		border-radius: 5px;
+		border-width: 1px;
+	    }
+	    #allMarkersMoblie {
+		display: none;
+	    }
+	    #publicMarkersMoblie {
+		display: none;
+	    }
+	    #monumentMarkersMoblie {
+		display: none;
+	    }
+	    #allMarkers {
+		display: block;
+	    }
+	    #publicMarkers {
+		display: block;
+	    }
+	    #monumentMarkers {
+		display: block;
+	    }
+	    #aboutProgram {
+		display: block;
+	    }
+	    #aboutMe{
+		display: block;
+	    }
+	    #location {
+		display: block;
+	    }
+	    #aboutMeText {
+    		outline: 1px solid black;
+	    }
+	    #aboutProgramText {
+    		outline: 1px solid black;
+	    }
+
+@media (max-width: 575.98px)
+{
+
+	    #location {
+		display: none;
+	    }
+
+
+}
+

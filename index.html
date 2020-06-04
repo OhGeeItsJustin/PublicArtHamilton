@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<!--I Justin Fallis, 000398973 certify that this material is my original work. 
+        No other person's work has been used without due acknowledgement. 
+        I have not made my work available to anyone else.
+	
+	Program Creates a map and displays the users location on the map and locations 
+	of Public Art Locations. User can use the buttons to filter out the types of art. 
+	Extra buttons to display information about the program.-->
+
+        <title>Public Art Hamilton</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD09KZwxBzfQYbpNcWdjegD0x9k4tSt6E"></script>
+	<script src="map.js"></script>
+	<script src="gmaps.js"></script>
+	<script src="convPublicArt.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="map.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+		<div>
+		<nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a id="changeColour" class="navbar-brand" href="index.html">Public Art Hamilton</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" id="changeColour" onclick="allMarkers()">All Markers</a></li>
+                        <li><a href="#" id="changeColour" onclick="publicArtMarkers()">Public Art Markers</a></li>
+                        <li><a href="#" id="changeColour" onclick="monumentMarkers()">Monument Markers</a></li>
+                    </ul>
+                 </div>
+            </div>
+        </nav>
+	<!--bootstrap container-->
+	<div class="container">
+			<br/>
+			<!--Displays the map to the screen-->
+			<div class="embed-responsive embed-responsive-16by9" id="map">
+				<iframe class="embed-responsive-item src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185954.82478182853!2d-80.0732317287287!3d43.260974969306595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c986c27de778f%3A0x2b6aee56d8df0e21!2sHamilton%2C+ON!5e0!3m2!1sen!2sca!4v1523264970952"></iframe>
+			</div>
+			<!--Div that displays the users location-->
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="location"></div>
+			<!--Buttons that will make a div appear displaying contain for that button.-->
+			<button id="aboutProgram" class="col-lg-3 col-md-4 col-sm-5 col-xs-12" type="button" class="btn" onclick="showProgram()">Description About Public Art Hamilton</button>
+			<button id="aboutMe" class="col-lg-3 col-md-4 col-sm-5 col-xs-12" type="button" class="btn" onclick="showMe()" >Description About Creator</button>	
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br/></div>
+		<!--Hidden divs with information in them-->
+		<div id="aboutProgramText" class="hidden col-lg-12 col-md-12 col-sm-12 col-xs-12">Beta Project for HTML5 class. This application is used for users that want to find the nearest public art around Hamilton. This application creates a map on the screen. For any screen size that aren't mobile has filter buttons above the map that create markers on the map. Application gets users location and displays it on the map with a marker and displays the users latitude and longitude below the map. Below the latitude and longitude are two extra buttons that display the description of the program and information about the creator. At the end of the application their is a footer that displays who maintains the page and the contact information. When on a mobile device the screen only displays the header, map, three filter buttons below the map and a footer.</div>
+		<div id="aboutMeText" class="hidden col-lg-12 col-md-12 col-sm-12 col-xs-12">My name is Justin Fallis and I'm a fourth semester student enrolled at Mohawk College in Hamilton Ontario. Age 19, born on September 8 1998.</div>	
+	</div>
+	<!--Footer for the application page with information about the website-->
+
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="container">
+			<div col-lg-6 col-md-6 col-sm-6 col-xs-6>
+			<p id="changeColour" class="text-center">Page Maintained by Justin Fallis</p>
+  			<p id="changeColour" class="text-center">Contact information: <a id="changeColour" href="mailto:justin.fallis@mohawkcollege.ca">justin.fallis@mohawkcollege.ca</a>.</p>		
+			</div>
+			<a href="https://twitter.com/PublicArtH" class="fa fa-twitter"></a>	
+		</div>	
+	</div>
+	</body>
+</html>
